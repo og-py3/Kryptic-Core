@@ -1,0 +1,2 @@
+[console_scripts]
+kryptic = kryptic.__main__:main

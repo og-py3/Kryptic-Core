@@ -1,0 +1,12 @@
+{
+  "name": "kryptic-client",
+  "version": "0.1.0",
+  "description": "JavaScript client for the Kryptic browser automation server",
+  "main": "kryptic.js",
+  "license": "MIT",
+  "author": "og-py3",
+  "keywords": ["kryptic", "browser", "automation", "scraping", "headless"],
+  "engines": {
+    "node": ">=16"
+  }
+}
