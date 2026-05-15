@@ -517,7 +517,7 @@ dev = [
     { name = "pytest-asyncio" },
     { name = "ruff" },
 ]
-polyglot = [
+polyrun = [
     { name = "polyrun" },
 ]
 
@@ -528,12 +528,12 @@ requires-dist = [
     { name = "mypy", marker = "extra == 'dev'", specifier = ">=1.10" },
     { name = "playwright", specifier = ">=1.59.0" },
     { name = "polyrun", marker = "extra == 'dev'", specifier = ">=0.1.0" },
-    { name = "polyrun", marker = "extra == 'polyglot'", specifier = ">=0.1.0" },
+    { name = "polyrun", marker = "extra == 'polyrun'", specifier = ">=0.1.0" },
     { name = "pytest", marker = "extra == 'dev'", specifier = ">=8.0" },
     { name = "pytest-asyncio", marker = "extra == 'dev'", specifier = ">=0.23" },
     { name = "ruff", marker = "extra == 'dev'", specifier = ">=0.4" },
 ]
-provides-extras = ["polyglot", "dev"]
+provides-extras = ["polyrun", "dev"]
 
 [[package]]
 name = "librt"
