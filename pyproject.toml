@@ -3,7 +3,7 @@ requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "kryptic"
+name = "kryptic-core"
 version = "0.2.0"
 description = "Fast, concurrent browser automation — headless browser pool + HTTP mode + multi-language server"
 readme = "README.md"
@@ -46,10 +46,10 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/og-py3/kryptic"
-Repository = "https://github.com/og-py3/kryptic"
-"Bug Tracker" = "https://github.com/og-py3/kryptic/issues"
-Changelog = "https://github.com/og-py3/kryptic/blob/main/CHANGELOG.md"
+Homepage = "https://github.com/og-py3/Kryptic-Core"
+Repository = "https://github.com/og-py3/Kryptic-Core"
+"Bug Tracker" = "https://github.com/og-py3/Kryptic-Core/issues"
+Changelog = "https://github.com/og-py3/Kryptic-Core/blob/main/CHANGELOG.md"
 
 [project.scripts]
 kryptic = "kryptic.__main__:main"
