@@ -1,7 +1,7 @@
 """
 polyrun integration — run Kryptic bindings in any language from Python.
 
-polyrun is a lightweight polyglot execution framework (pip install polyrun)
+polyrun is a lightweight polyrun execution framework (pip install polyrun)
 that lets you run JavaScript, Java, Go, Rust, C, and C++ code directly
 from Python — no manual compilation or runtime setup needed.
 
