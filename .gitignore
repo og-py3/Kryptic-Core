@@ -1,0 +1,75 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.venv/
+venv/
+env/
+.env
+pip-wheel-metadata/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+*.cover
+
+# Playwright
+.cache/ms-playwright/
+test-results/
+playwright-report/
+
+# Node.js (bindings)
+node_modules/
+
+# Java
+*.class
+*.jar
+
+# Rust
+target/
+Cargo.lock
+
+# Go
+vendor/
+
+# C / C++
+*.o
+*.a
+*.out
+bindings/c/kryptic_example
+bindings/cpp/example
+
+# IDE
+.idea/
+.vscode/
+*.sublime-workspace
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Replit (not needed in the repo)
+.replit
+replit.nix
+.local/
+.cache/
+.upm/
+
+# Project workspace files (not part of the library)
+artifacts/
+lib/
+scripts/
+pnpm-lock.yaml
+pnpm-workspace.yaml
+package.json
+tsconfig*.json
+node_modules/

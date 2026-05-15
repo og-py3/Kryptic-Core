@@ -1,0 +1,76 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kryptic"
+version = "0.2.0"
+description = "Fast, concurrent browser automation — headless browser pool + HTTP mode + multi-language server"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{ name = "og-py3" }]
+keywords = [
+    "browser", "automation", "scraping", "playwright",
+    "headless", "async", "concurrent", "spider", "crawl",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Internet :: WWW/HTTP :: Browsers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Framework :: AsyncIO",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "playwright>=1.59.0",
+    "httpx>=0.28.1",
+    "aiohttp>=3.13.5",
+]
+
+[project.optional-dependencies]
+polyglot = [
+    "polyrun>=0.1.0",
+]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.23",
+    "ruff>=0.4",
+    "mypy>=1.10",
+    "polyrun>=0.1.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/og-py3/kryptic"
+Repository = "https://github.com/og-py3/kryptic"
+"Bug Tracker" = "https://github.com/og-py3/kryptic/issues"
+Changelog = "https://github.com/og-py3/kryptic/blob/main/CHANGELOG.md"
+
+[project.scripts]
+kryptic = "kryptic.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["kryptic*"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP"]
+ignore = ["E501"]
+
+[tool.mypy]
+python_version = "3.10"
+strict = false
+ignore_missing_imports = true
