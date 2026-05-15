@@ -34,7 +34,7 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-polyglot = [
+polyrun = [
     "polyrun>=0.1.0",
 ]
 dev = [
