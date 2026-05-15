@@ -71,7 +71,7 @@ python -m playwright install chromium
 With polyrun support (to run the language bindings from Python):
 
 ```bash
-pip install "kryptic-core[polyglot]"
+pip install "kryptic-core[polyrun]"
 ```
 
 ---
@@ -217,10 +217,10 @@ Client bindings in `bindings/` — zero external dependencies:
 
 ## polyrun Integration
 
-[polyrun](https://pypi.org/project/polyrun/) is a lightweight polyglot execution framework — it lets you run any of the Kryptic language bindings **directly from Python**, with no manual compilation or runtime setup.
+[polyrun](https://pypi.org/project/polyrun/) is a lightweight polyrun execution framework — it lets you run any of the Kryptic language bindings **directly from Python**, with no manual compilation or runtime setup.
 
 ```bash
-pip install "kryptic-core[polyglot]"
+pip install "kryptic-core[polyrun]"
 # or: pip install polyrun
 ```
 
