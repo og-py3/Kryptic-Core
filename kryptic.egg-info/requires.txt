@@ -9,5 +9,5 @@ ruff>=0.4
 mypy>=1.10
 polyrun>=0.1.0
 
-[polyglot]
+[polyrun]
 polyrun>=0.1.0
