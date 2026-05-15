@@ -64,14 +64,14 @@ Kryptic is a headless browser automation library built for speed. It pools multi
 ## Installation
 
 ```bash
-pip install kryptic
+pip install kryptic-core
 python -m playwright install chromium
 ```
 
 With polyrun support (to run the language bindings from Python):
 
 ```bash
-pip install "kryptic[polyglot]"
+pip install "kryptic-core[polyglot]"
 ```
 
 ---
@@ -220,7 +220,7 @@ Client bindings in `bindings/` — zero external dependencies:
 [polyrun](https://pypi.org/project/polyrun/) is a lightweight polyglot execution framework — it lets you run any of the Kryptic language bindings **directly from Python**, with no manual compilation or runtime setup.
 
 ```bash
-pip install "kryptic[polyglot]"
+pip install "kryptic-core[polyglot]"
 # or: pip install polyrun
 ```
 
